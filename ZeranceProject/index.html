@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick-theme.css"/>
+    <link rel="stylesheet" href="css/slick.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Zerance Project</title>
+</head>
+<body>
+    <header >
+        <!--Logo-->
+        <div class="container-logo" id="logo">
+            <a href="index.html"><img src="img/logoZerance.png" alt="studio zerance"></a>
+            <div class="logo-text">
+                <h2><strong>Studio<br>Zerance.</strong></h2>
+            </div>
+        </div>
+        <!--Fin Logo-->
+
+        <!--Navbar-->
+        <nav id="menu">
+            <ul>
+                <li><a href="#portfolio"><strong>Nos clients</strong></a></li>
+                <li><a href="#slider"><strong>Notre Offre</strong></a></li>
+                <li><a href="#loop"><strong>Le Studio</strong></a></li>
+                <li><button id="popup" onclick="div_show()"><strong>Contact</strong></button></li>
+            </ul>
+        </nav>
+        <!--Fin Navbar-->
+
+    </header>
+
+    <main>
+        <!--Popup Contact Form-->
+        <div id="formBody" style="overflow:hidden;">
+            <div id="abc">
+                <div id="popupContact">
+                    <form action="#" id="form" method="post" name="form">
+                    <img id="close" src="images/3.png" onclick ="div_hide()">
+                    <h2 class="popup_title">Contactez Nous</h2>
+                    <hr>
+                    <input id="name" name="name" placeholder="Nom" type="text">
+                    <input id="email" name="email" placeholder="Email" type="text">
+                    <textarea id="msg" name="message" placeholder="Message"></textarea>
+                    <a href="javascript:%20check_empty()" id="submit">Envoyer</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--Fin Popup Contact Form-->
+
+
+        <!--Banner-->
+        <section class="banner">
+            <p class="banner-date">SINCE 2016</p>
+            <h1>&#60;<strong>We create from scratch<br> amazing <u>Shopify/</u></strong>&#62;</h1>
+        </section>
+        <!--Fin Banner-->
+        
+        <!--Portfolio-->
+        <!-- pour cette section, j'ai du récupérer les logos de chaque enseignes sur la véritable homepage car celles provenant de la maquette ont une résolution trop faible. Le rendu se rapproche donc d'avantage de celui sur votre site que de celui sur la maquette puisque les enseignes diverges d'une version à l'autre-->
+        <section class="portfolio" id="portfolio">
+            <div class="cust-container">
+                <h2>nos client sont géniaux !</h2>
+
+                <div class="container">
+                    <div class="row cols-5 ">
+                      <div class="col"><a href="https://yokoshop.com/" target="blank"><img src="img/cust_yoko.jpg" alt=""></a></div>
+                      <div class="col"><a href="https://fr.webedia-group.com/" target="blank"><img src="img/cust_webedia.jpg" alt=""></a></div>
+                      <div class="col"><a href="https://avnier.com/" target="blank"><img src="img/cust_avnier.jpg" alt=""></a></div>
+                      <div class="col"><a href="https://seasonly.fr/" target="blank"><img src="img/cust_seasonly.jpg" alt=""></a></div>
+                      <div class="col"><a href="https://www.joone.fr/" target="blank"><img src="img/cust_joone.png" alt=""></a></div>
+                      <div class="col"><a href="http://balzac-paris.myshopify.com/" target="blank"><img src="img/cust_balzac.webp" alt=""></a></div>
+                      <div class="col"><a href="https://www.boxtal.com/fr/fr/accueil" target="blank"><img src="img/cust_boxtal.jpg" alt=""></a></div>
+                      <div class="col"><a href="https://syncprotein.com/" target="blank"><img src="img/cust_sync.png" alt=""></a></div>
+                      <div class="col"><a href="https://www.bonsoirs.com/" target="blank"><img src="img/cust_bonsoirs.jpg" alt=""></a></div>
+                      <div class="col"><a href="https://fempo.co/" target="blank"><img src="img/cust_fempo.jpg" alt=""></a></div>
+                      <div class="col"><a href="https://bigfernand.com/" target="blank"><img src="img/cust_bigfernand.jpg" alt=""></a></div>
+                      <div class="col"><a href="https://lafourche.fr/" target="blank"><img src="img/cust_lafourche.jpg" alt=""></a></div>
+                      <div class="col"><a href="https://www.seb.fr/" target="blank"><img src="img/cust_seb.png" alt=""></a></div>
+                      <div class="col"><a href="https://www.cdiscount.fr/" target="blank"><img src="img/cust_cdiscount.jpg" alt=""></a></div>
+                      <div class="col"><a href="https://inesdelafressange.fr/" target="blank"><img src="img/cust_ines.png" alt=""></a></div>
+                      <div class="col"><a href="https://www.respire.co/" target="blank"><img src="img/cust_respire.jpg" alt=""></a></div>
+                      <div class="col"><a href="https://www.rondorff.com/" target="blank"><img src="img/cust_rondorff.jpg" alt=""></a></div>
+                      <div class="col"><a href="https://saeve.com/" target="blank"><img src="img/cust_saeve.png" alt=""></a></div>
+                      <div class="col"><a href="https://franklinpetfood.com/" target="blank"><img src="img/cust_franklin.png" alt=""></a></div>
+                      <div class="col"><a href="https://mars.com/" target="blank"><img src="img/cust_mars.jpg" alt=""></a></div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+        <!--Fin Portfolio-->
+        
+        <!--Slider-->
+        <section class="slider-container" id="slider">
+            <div class="slider">
+                <div>
+                    <img src="img/Artboard_1.jpg" alt="">
+                        <div class="slider-text">
+                            <span class="title">from scratch /</span>
+                            <h2>seasonly</h2>
+                            <p>Développement site from scratch et d’un quiz personnalisé avec abonnement. Développement site from scratch et d’un quiz personnalisé avec abonnement.</p>
+                            <span class="more">&#60;<strong><u>Voir plus/</u></strong>&#62;</span>
+                        </div>
+                </div>
+                <div>
+                    <img src="img/Artboard_2.jpg" alt="">
+                        <div class="slider-text">
+                            <span class="title">from scratch /</span>
+                            <h2>seasonly</h2>
+                            <p>Développement site from scratch et d’un quiz personnalisé avec abonnement. Développement site from scratch et d’un quiz personnalisé avec abonnement.</p>
+                            <span class="more">&#60;<strong><u>Voir plus/</u></strong>&#62;</span>
+                        </div>
+                </div>
+            </div>       
+        </section>
+        
+        <!--Fin Slider-->
+
+        <!--Loop-->
+        <section class="text-infinite" id="loop">
+            <span class="loop">
+                Qu’est ce qui est jaune et qui attend ? / Quand c’est trop, c’est Tropico / Frédéric Diefental / Good cat Bad cat / Qu’est ce qui est jaune et qui attend ? / Quand c’est trop, c’est Tropico / Frédéric Diefental / Good cat Bad cat 
+            </span>
+            <button type="button" class="slick-next">Next</button>
+            <button type="button" class="slick-prev">Previous</button>
+        </section>
+        <!--Fin Loop-->
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/gender.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
